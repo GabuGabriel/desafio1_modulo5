@@ -1,19 +1,19 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import Contactos from './components/Contactos'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './views/Home';
+import Contactos from './views/Contactos';
+import Pagina404 from './views/404';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <BrowserRouter>
-      <>
-        <Navbar />
+         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Contactos' element={<Contactos />} />
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Contactos' element={<Contactos/>} />
+          <Route path='*' element={<Pagina404/>} />
         </Routes>
-      </>
     </BrowserRouter>
   )
 }
