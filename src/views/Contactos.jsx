@@ -1,6 +1,5 @@
 const Contactos = () => {
     return (
-        <>
             <form className="formulario">
                 <fieldset disabled>
                     <legend>¿Quieres contactarte con nosotros?</legend>
@@ -15,7 +14,6 @@ const Contactos = () => {
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </fieldset>
             </form>
-        </>
     )
 }
 export default Contactos
